@@ -7,7 +7,8 @@ const CreateNewPost = () => {
     const [body, setBody] = useState("");
     const [successMessage, setSuccessMessage] = useState("");
     const navigate = useNavigate();
-
+    const lastID = Number(sessionStorage.getItem('lastPostId') || 100);
+    const newID = lastID + 1;
      
     const generateUniqueId = () => {
         let lastId = sessionStorage.getItem('lastPostId');
@@ -25,10 +26,10 @@ const CreateNewPost = () => {
         const newPost = { id, title, body, createdAt: new Date().toISOString() };
         await createPost(newPost);  
         sessionStorage.setItem(`post-${id}`, JSON.stringify(newPost));
-        setSuccessMessage("Post created successfully!");
-        setTimeout(() => {
-            navigate(`/`);
-        }, 1500); 
+        setSuccessMessage(`Post created successfully! ID : ${newID}`);
+        // setTimeout(() => {
+        //     navigate(`/`);
+        // }, 1500); 
     }; 
 
     return (

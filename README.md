@@ -10,11 +10,11 @@ To set up this project locally, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone 
+    git clone https://github.com/ItsBajra/react-intern-task.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd 
+    cd react-intern-task
     ```
 3. Install dependencies:
     ```sh
@@ -62,7 +62,7 @@ To set up this project locally, follow these steps:
 To create a new post:
 1. Click on the "Create New Post" button on the dashboard.
 2. Fill in the title and body of the post.
-3. Click "Create Post" to save the post.
+3. Click "Create Post" to save the post. The newly created post appears at the bottom as the table is in ascending order. 
 
 To view a post:
 1. Click on the eye icon next to the post you want to view.
