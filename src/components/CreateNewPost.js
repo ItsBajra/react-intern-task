@@ -34,7 +34,7 @@ const CreateNewPost = () => {
 
     return (
         <div className="container mx-auto mt-10 p-6  rounded-lg shadow-lg md:w-2/6">
-            <h1 className="text-4xl font-bold mb-6 ">Create New Post</h1>
+            <h1 className="text-2xl font-bold mb-6 ">Create New Post</h1>
             {successMessage && (
                 <div className="border-l-4 bg-alertBg border-green-500 text-green-700 p-4 mb-4" role="alert">
                     <p className="bg-alertBg">{successMessage}</p>

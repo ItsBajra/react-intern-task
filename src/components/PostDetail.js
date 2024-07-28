@@ -31,7 +31,7 @@ const PostDetail = () => {
 
   return (
     <div className="container mx-auto mt-10 p-6 rounded-lg shadow-lg md:w-2/6">
-      <h1 className="text-4xl font-bold mb-6">Post Details</h1>
+      <h1 className="text-2xl font-bold mb-6">Post Details</h1>
       <div className="p-6 rounded-lg shadow-md space-y-4">
         <div>
           <label className="block text-gray-700 text-lg text-left ml-2 font-bold mb-2">ID</label>
